@@ -1,7 +1,6 @@
 import os
 
-from distribute_setup import use_setuptools
-use_setuptools()
+from setuptools import setup, find_packages
 
 from setuptools.extension import Extension
 from setuptools.command.build_ext import build_ext
@@ -46,6 +45,6 @@ setup(name = "MacFSEvents",
         'Topic :: System :: Filesystems',
       ],
       zip_safe=False,
-      test_suite="tests",
+      test_suite="tests2",
       py_modules=['fsevents'],
      )
